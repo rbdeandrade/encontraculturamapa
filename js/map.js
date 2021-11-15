@@ -14,7 +14,7 @@ var lisboa = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/
 });
 
 // initialize the map
-var map = L.map('map', {center: [10.0, 0.0], zoom: 2, layers: [/* an, as, af, oc, */ porto, lisboa]});
+var map = L.map('map', {center: [38.719746648997585, -9.148703896593593], zoom: 10, layers: [porto, lisboa]});
 
 // custom markers icons
 var dancasIcon = L.icon({
@@ -76,8 +76,8 @@ function onEachFeature(feature, layer) {
 //Dança Markers
 var dancas = L.geoJSON(dancas, {
 
-    pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {icon: dancasIcon});
+    pointToLayer: function (feature, lnglat) {
+        return L.marker(lnglat, {icon: dancasIcon});
     },
 
     onEachFeature: onEachFeature
@@ -86,8 +86,8 @@ var dancas = L.geoJSON(dancas, {
 //Graffiti Markers
 var graffiti = L.geoJSON(graffiti, {
 
-    pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {icon: graffitiIcon});
+    pointToLayer: function (feature, lnglat) {
+        return L.marker(lnglat, {icon: graffitiIcon});
     },
 
     onEachFeature: onEachFeature
@@ -96,8 +96,8 @@ var graffiti = L.geoJSON(graffiti, {
 //Eventos Markers
 var eventos = L.geoJSON(eventos, {
 
-    pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {icon: eventosIcon});
+    pointToLayer: function (feature, lnglat) {
+        return L.marker(lnglat, {icon: eventosIcon});
     },
 
     onEachFeature: onEachFeature
@@ -106,8 +106,8 @@ var eventos = L.geoJSON(eventos, {
 //Outros Markers
 var outros = L.geoJSON(outros, {
 
-    pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {icon: outrosIcon});
+    pointToLayer: function (feature, lnglat) {
+        return L.marker(lnglat, {icon: outrosIcon});
     },
 
     onEachFeature: onEachFeature
