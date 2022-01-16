@@ -21,7 +21,7 @@ footer, header, main, section {
 }
 
 .bg {
-  background-color: #fa9233 !important;
+  background-color: #4cb4cb !important;
 }
 
 .text-white {
@@ -34,10 +34,6 @@ footer, header, main, section {
 
 .text-center {
   text-align: center !important;
-}
-
-.text-uppercase {
-  text-transform: uppercase !important;
 }
 
 .justify-content-center {
