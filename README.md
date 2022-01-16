@@ -2,4 +2,7 @@
 
 Teste de Mapa para Site Encontra Cultura
 
-[Website](https://rbdeandrade.github.io/encontraculturamapa/)
+[Mapa - Direct Link](https://rbdeandrade.github.io/encontraculturamapa/)
+
+[Website](https://grupo1.zoomlab.pt/wp/artistas/geomap/)
+
